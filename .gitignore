@@ -1,0 +1,17 @@
+# Ignore saved model
+Saved_Models/
+
+#Ignore Datasets
+*.zip
+*.pyc
+XAI_methods/Saved_Ranks
+__pycache__/
+Utils/__pycache__
+Datasets/__pycache__
+Datasets/EuroSAT
+Datasets/Eurosat_MSI
+Datasets/FashionMNIST
+Datasets/Resisc45
+Datasets/UCMerced
+Datasets/MSTAR
+
