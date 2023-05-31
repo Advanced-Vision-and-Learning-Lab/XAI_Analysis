@@ -6,9 +6,7 @@ Create datasets and dataloaders for models
 ## Python standard libraries
 from __future__ import print_function
 from __future__ import division
-import numpy as np
 import pdb
-from sklearn.model_selection import train_test_split
 
 ## PyTorch dependencies
 import torch

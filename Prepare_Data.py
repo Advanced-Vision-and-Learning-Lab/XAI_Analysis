@@ -91,7 +91,7 @@ def Prepare_DataLoaders(Network_parameters, split,input_size=224, view_results =
     if view_results:
         labels = test_dataset.targets
         classes = test_dataset.classes
-        m = 10
+        m = 1
         batch_size = m*len(classes)
         sampler = samplers.MPerClassSampler(labels, m, batch_size, length_before_new_iter=100000)
         dataset_sampler = {'train': None, 'test': sampler, 'val': None}

@@ -4,14 +4,13 @@ from skimage.segmentation import slic
 from skimage.segmentation import mark_boundaries
 from captum.attr import *
 from captum._utils.models.linear_model import SkLearnLasso, SkLearnLinearModel
-from pytorch_grad_cam import GradCAM, HiResCAM
+from pytorch_grad_cam import HiResCAM
 from barbar import Bar
 import matplotlib.pyplot as plt
 from skimage import data
 from skimage.filters import threshold_otsu
 import pdb
 import tqdm
-from pytorch_metric_learning import samplers
 
 def transform_list(saved_list):
     'Transform list to numpy array'
@@ -90,7 +89,7 @@ def plot_feature_mask(x_batch, s_batch, feature_mask, Params):
     plt.show()
 
 
-def get_attributions(dataloaders, dataset, model, device, Params, m, parallel=False):
+def get_attributions(dataloaders, dataset, model, device, Params, parallel=False):
     x_batch_all = []
     y_batch_all = []
     s_batch_all = []

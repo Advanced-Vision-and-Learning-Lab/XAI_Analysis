@@ -2,17 +2,15 @@
 """
 Return index of built in Pytorch datasets 
 """
-import PIL
 import numpy as np
 from torch.utils.data import Dataset
-from torchvision.datasets import CIFAR100
 from torchvision import datasets
 import pdb
 import torchgeo
 import torch
 import torchvision.transforms as T
 import kornia.augmentation as K
-from torchgeo.datasets import So2Sat, EuroSAT
+from torchgeo.datasets import EuroSAT
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 

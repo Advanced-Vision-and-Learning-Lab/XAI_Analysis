@@ -68,7 +68,7 @@ def main(Params):
     accuracy = np.zeros(NumRuns)
     MCC = np.zeros(NumRuns)
     
-    for split in range(0, NumRuns):
+    for split in range(0, 1):
         # torch.manual_seed(split)
         # np.random.seed(split)
         # np.random.seed(split)
@@ -221,11 +221,26 @@ def main(Params):
 
         eps = 10e-6
         df = spyder_df_metrics_avg_score
-        df_normalised = df.loc[:, ~df.columns.isin(['Robustness', 'Randomization'])].apply(lambda x: x / (x.max() + eps))
+        df_normalised = df.loc[:, ~df.columns.isin(['Robustness', 
+                            'Randomization'])].apply(lambda x: x / (x.max() + eps))
+        
         df_normalised["Robustness"] = df["Robustness"].min()/(df["Robustness"].values + eps)
-        df_normalised["Randomisation"] = df["Randomization"].min()/(df["Randomization"].values + eps)
-        df_normalised_rank = df_normalised.rank()
-        pd.DataFrame(df_normalised_rank,columns = columns, index = index).to_csv((directory + 'Average rank.csv'))
+        df_normalised["Randomization"] = df["Randomization"].min()/(df["Randomization"].values + eps)
+        df_inverse = df_normalised.copy()  # Create a copy of the normalized DataFrame
+
+        # Negative normalization for plotting
+        df_inverse = df.loc[:, ~df.columns.isin(['Robustness', 
+                            'Randomization'])].apply(lambda x: (x.max() - x) / (x.max() - x.min() + eps))
+
+        # Reverse normalization for 'Robustness'
+        df_inverse['Robustness'] = df['Robustness'].min() / (df_normalised['Robustness'].values + eps)
+
+        # Reverse normalization for 'Randomisation'
+        df_inverse['Randomization'] = df['Randomization'].min() / (
+                            df_normalised['Randomization'].values + eps)
+        df_normalised_rank = df_inverse.rank(ascending = False)
+        df_inverse_normalised_rank = df_normalised.rank(ascending = False)
+        pd.DataFrame(df_inverse_normalised_rank, columns = columns, index = index).to_csv((directory + 'Average rank.csv'))
         plot_avg_spyder_plot(pd.DataFrame(df_normalised_rank), pd.DataFrame(df_metrics_std_rank), directory)
 
     # Write to text file

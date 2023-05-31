@@ -210,7 +210,7 @@ def get_metrics(dataloaders, dataset, model, device, dir, Params, parallel=False
             return_aggregate=True,
             disable_warnings=True,
         ),
-        "Localisation": quantus.RelevanceRankAccuracy(
+        "Localization": quantus.RelevanceRankAccuracy(
             abs=True,
             normalise=False,
             aggregate_func=np.nanmean,
@@ -245,8 +245,7 @@ def get_metrics(dataloaders, dataset, model, device, dir, Params, parallel=False
 
     # Define XAI methods to score.
     global xai_methods
-    m = 5
-    xai_methods, x_batch, y_batch, s_batch = get_attributions(dataloaders, dataset, model, device, Params, m, parallel)
+    xai_methods, x_batch, y_batch, s_batch = get_attributions(dataloaders, dataset, model, device, Params, parallel)
 
     if dataset == "Eurosat_MSI":
         y_batch = y_batch.astype(int)
@@ -288,10 +287,24 @@ def get_metrics(dataloaders, dataset, model, device, dir, Params, parallel=False
 
     # Take inverse ranking for Robustness, since lower is better.
     eps = 10e-6
-    df_normalised = df.loc[:, ~df.columns.isin(['Robustness', 'Randomization'])].apply(lambda x: x / (x.max() + eps))
+    df_normalised = df.loc[:, ~df.columns.isin(['Robustness', 
+                        'Randomization'])].apply(lambda x: x / (x.max() + eps))
+    
     df_normalised["Robustness"] = df["Robustness"].min()/(df["Robustness"].values + eps)
-    df_normalised["Randomisation"] = df["Randomization"].min()/(df["Randomization"].values + eps)
-    df_normalised_rank = df_normalised.rank()
+    df_normalised["Randomization"] = df["Randomization"].min()/(df["Randomization"].values + eps)
+    df_inverse = df_normalised.copy()  # Create a copy of the normalized DataFrame
+
+    # Negative normalization for plotting
+    df_inverse = df.loc[:, ~df.columns.isin(['Robustness', 
+                        'Randomization'])].apply(lambda x: (x.max() - x) / (x.max() - x.min() + eps))
+
+    # Reverse normalization for 'Robustness'
+    df_inverse['Robustness'] = df['Robustness'].min() / (df_normalised['Robustness'].values + eps)
+
+    # Reverse normalization for 'Randomisation'
+    df_inverse['Randomization'] = df['Randomization'].min() / (
+                        df_normalised['Randomization'].values + eps)
+    df_normalised_rank = df_inverse.rank(ascending = False)
 
     # Make spyder graph!
     data = [df_normalised_rank.columns.values, (df_normalised_rank.to_numpy())]
@@ -320,7 +333,8 @@ def get_metrics(dataloaders, dataset, model, device, dir, Params, parallel=False
     fig.tight_layout()
     fig.savefig(dir + "spyderplot_metrics.png", dpi=fig.dpi)
     plt.close()
-
-    return df, df_normalised_rank
+    
+    df_inverse_normalised_rank = df_normalised.rank(ascending = False)
+    return df, df_inverse_normalised_rank
 
 

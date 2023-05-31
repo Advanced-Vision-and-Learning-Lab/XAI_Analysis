@@ -7,7 +7,7 @@ please cite the appropiate sources (papers, repositories, etc.) as mentioned
 on the webpages and provided here.
 UCMerced and EuroSAT are downloaded through torchgeo settings.
 
-## UCMerced dataset [[`BibTeX`](#CitingUCMerced)]
+## UCMerced dataset [['BibTeX'](#CitingUCMerced)]
 To download the UCMerced dataset, initialize a new UC Merced dataset instance in which download is set to True.
 The structure of the `UCMerced` folder is as follows:
 ```
