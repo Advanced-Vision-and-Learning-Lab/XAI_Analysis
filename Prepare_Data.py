@@ -91,9 +91,15 @@ def Prepare_DataLoaders(Network_parameters, split,input_size=224, view_results =
     if view_results:
         labels = test_dataset.targets
         classes = test_dataset.classes
-        m = 1
+        #m is the number of samples taken from each class
+        m = 10
+        #In our paper, batch_size
+            #UCMerced - 210
+            #EuroSAT - 100
+            #MSTAR - 40
         batch_size = m*len(classes)
         sampler = samplers.MPerClassSampler(labels, m, batch_size, length_before_new_iter=100000)
+        #retain sampler = None for 'train' and 'val' data splits
         dataset_sampler = {'train': None, 'test': sampler, 'val': None}
         Network_parameters["batch_size"]["test"] = batch_size
 
@@ -104,6 +110,8 @@ def Prepare_DataLoaders(Network_parameters, split,input_size=224, view_results =
     collate_fn = {'train': collate_fn_train, 'val': collate_fn_test, 'test': collate_fn_test}
     
 
+    #Collate function is used only for EuroSAT and MSTAR
+    #Compatible input size for Kornia augmentation
     if Dataset == "UCMerced" or Dataset == "MSTAR":
     # Create training and test dataloaders
         dataloaders_dict = {x: torch.utils.data.DataLoader(image_datasets[x],
