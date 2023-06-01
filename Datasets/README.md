@@ -14,7 +14,7 @@ The structure of the `UCMerced` folder is as follows:
     ├── UCMerced_LandUse //Contains folders of images for each class.
     ├── uc_merced-train
     ├── uc_merced-test  
-	├── uc_merced-val
+    ├── uc_merced-val
 ``` 
 
 ## <a name="CitingUCMerced"></a>Citing UCMerced
@@ -41,7 +41,7 @@ The structure of the `EuroSAT` folder is as follows:
     ├── ds //Contains folders of images for each class.
     ├── eurosat-train
     ├── eurosat-test
-	├── eurosat-val
+    ├── eurosat-val
 ``` 
 
 ## <a name="CitingEuroSAT"></a>Citing EuroSAT
