@@ -1,9 +1,9 @@
 # FocalNets [[`BibTeX`](https://github.com/Peeples-Lab/XAI_Analysis/tree/main/Utils#citing-focalnets)]
- 
+ Focalnet.py is adapted from the implementation in https://github.com/microsoft/FocalNet/tree/main/classification
 ## <a name="CitingFocalNets"></a>Citing FocalNets
 If you use this model architecture in your research, please cite the following paper:
 
-<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://proceedings.neurips.cc/paper_files/paper/2022/file/1b08f585b0171b74d1401a5195e986f1-Paper-Conference.pdf"> Focal Modulation Networks </a>
+<a href="https://openreview.net/forum?id=ePhEbo039l"> Focal Modulation Networks </a>
 
 **BibTex:**
 ```
