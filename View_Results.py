@@ -68,13 +68,13 @@ def main(Params):
     accuracy = np.zeros(NumRuns)
     MCC = np.zeros(NumRuns)
     
-    for split in range(0, 1):
-        # torch.manual_seed(split)
-        # np.random.seed(split)
-        # np.random.seed(split)
-        # torch.cuda.manual_seed(split)
-        # torch.cuda.manual_seed_all(split)
-        # torch.manual_seed(split)
+    for split in range(0, NumRuns):
+        torch.manual_seed(split)
+        np.random.seed(split)
+        np.random.seed(split)
+        torch.cuda.manual_seed(split)
+        torch.cuda.manual_seed_all(split)
+        torch.manual_seed(split)
         
         sub_dir = '{}/{}/{}/{}/Run_{}/'.format(Params['folder'],
                                                  Params['mode'],
@@ -273,7 +273,7 @@ def parse_args():
                         help='Save results of experiments(default: True)')
     parser.add_argument('--folder', type=str, default='Saved_Models/Test_Code/',
                         help='Location to save models')
-    parser.add_argument('--data_selection', type=int, default=3,
+    parser.add_argument('--data_selection', type=int, default=1,
                         help='Dataset selection:  1:UCMerced, 2:Eurosat_MSI, 3:MSTAR')
     parser.add_argument('--feature_extraction', default=True, action=argparse.BooleanOptionalAction,
                         help='Flag for feature extraction. False, train whole model. True, only update fully connected/encoder parameters (default: True)')
@@ -295,7 +295,7 @@ def parse_args():
                         help='Resize the image before center crop. (default: 256)')
     parser.add_argument('--lr', type=float, default=0.001,
                         help='learning rate (default: 0.01)')
-    parser.add_argument('--model', type=str, default='focalnet',
+    parser.add_argument('--model', type=str, default='convnext',
                         help='backbone architecture to use (default: 0.01)')
     parser.add_argument('--use-cuda', action='store_true', default=True,
                         help='enables CUDA training')

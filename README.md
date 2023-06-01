@@ -3,6 +3,8 @@
 
 _Akshatha Mohan and Joshua Peeples_
 
+![Fig1_Workflow](https://github.com/Peeples-Lab/XAI_Analysis/Images/Horizontal_Fig_1)
+
 Note: If this code is used, cite it: Akshatha Mohan and Joshua Peeples. 
 (2023, July 19). Peeples-Lab/XAI_Analysis: Initial Release (Version v1.0). 
 Zendo. https://doi.org/10.5281/zenodo.5572704 (TBD)
@@ -77,15 +79,15 @@ https://github.com/Peeples-Lab/XAI_Analysis
 		├── preprocess.py // Pytorch Transforms applied to numpy files
 		├── Pytorch_Datasets.py // Return Index for Pytorch datasets
 		├── Pytorch_Datasets_Names.py // Return names of classes in each dataset
-    └── Utils  //utility functions
+  └── Utils  //utility functions
 		├── Compute_FDR.py  // Compute Fisher Score
 		├── Confusion_mats..py  // Create and plot confusion matrix.
 		├── Focalnet.py // Implementation of Focal Modulation Networks
-        ├── Generating_Learning_Curves.py  // Plot training and validation accuracy and error measures.
-        ├── Generate_TSNE_visual.py  // Create TSNE visual for results.
-        ├── Network_functions.py  // Contains functions to initialize, train, and test model. 
-        ├── pytorchtools.py // Function for early stopping.
-        ├── Save_Results.py  // Save results from demo script.
+    ├── Generating_Learning_Curves.py  // Plot training and validation accuracy and error measures.
+    ├── Generate_TSNE_visual.py  // Create TSNE visual for results.
+    ├── Network_functions.py  // Contains functions to initialize, train, and test model. 
+    ├── pytorchtools.py // Function for early stopping.
+    ├── Save_Results.py  // Save results from demo script.
 	└── XAI_Methods  // XAI functions
 		├── get_attributes.py // Compute attributions of XAI methods
 		├── get_explanations.py // Calculate XAI metrics, plot 
@@ -99,7 +101,7 @@ file in the root directory of this source tree.
 
 This product is Copyright (c) 2023 A. Mohan and J. Peeples. All rights reserved.
 
-## <a name="CitingQuantitative"></a>Citing Quantitative
+## <a name="CitingQuantitative"></a>Citing Quantitative Analysis of Primary Attribution Explainable Artificial Intelligence Methods for Remote Sensing Image Classification
 
 If you use the code, please cite the following 
 reference using the following entry.

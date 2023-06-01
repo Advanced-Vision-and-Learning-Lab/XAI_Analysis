@@ -7,14 +7,14 @@ please cite the appropiate sources (papers, repositories, etc.) as mentioned
 on the webpages and provided here.
 
 ## UCMerced dataset [[`BibTeX`](https://github.com/Peeples-Lab/XAI_Analysis/tree/main/Datasets#citing-ucmerced)]
-To download the UCMerced dataset. Initialize a new UC Merced dataset instance in which download is set to True.
+To download the UCMerced dataset, initialize a new UC Merced dataset instance in which download is set to True.
 The structure of the `UCMerced` folder is as follows:
 ```
 └── root dir
     ├── UCMerced_LandUse //Contains folders of images for each class.
     ├── uc_merced-train
     ├── uc_merced-test  
-	├── uc_merced-val
+	  ├── uc_merced-val
 ``` 
 
 ## <a name="CitingUCMerced"></a>Citing UCMerced
@@ -34,14 +34,14 @@ https://dl.acm.org/doi/10.1145/1869790.1869829
 ```
 
 ## EuroSAT dataset [[`BibTeX`](https://github.com/Peeples-Lab/XAI_Analysis/tree/main/Datasets#citing-eurosat)]
-To download the EuroSAT dataset. Initialize a new EuroSAT dataset instance in which download is set to True.
+To download the EuroSAT dataset, initialize a new EuroSAT dataset instance in which download is set to True.
 The structure of the `EuroSAT` folder is as follows:
 ```
 └── root dir
     ├── ds //Contains folders of images for each class.
     ├── eurosat-train
     ├── eurosat-test
-	├── eurosat-val
+	  ├── eurosat-val
 ``` 
 
 ## <a name="CitingEuroSAT"></a>Citing EuroSAT

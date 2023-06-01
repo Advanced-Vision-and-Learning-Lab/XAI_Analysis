@@ -93,7 +93,7 @@ def Prepare_DataLoaders(Network_parameters, split,input_size=224, view_results =
         classes = test_dataset.classes
         #m is the number of samples taken from each class
         m = 10
-        #In our paper, batch_size
+        #In our paper, batch_size for:
             #UCMerced - 210
             #EuroSAT - 100
             #MSTAR - 40

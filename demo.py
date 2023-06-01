@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Main script for LACE experiments
+Main script for XAI experiments
 """
 import argparse
 
