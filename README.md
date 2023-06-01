@@ -77,15 +77,15 @@ https://github.com/Peeples-Lab/XAI_Analysis
 		├── preprocess.py // Pytorch Transforms applied to numpy files
 		├── Pytorch_Datasets.py // Return Index for Pytorch datasets
 		├── Pytorch_Datasets_Names.py // Return names of classes in each dataset
-    └── Utils  //utility functions
+    	└── Utils  //utility functions
 		├── Compute_FDR.py  // Compute Fisher Score
 		├── Confusion_mats..py  // Create and plot confusion matrix.
 		├── Focalnet.py // Implementation of Focal Modulation Networks
-        ├── Generating_Learning_Curves.py  // Plot training and validation accuracy and error measures.
-        ├── Generate_TSNE_visual.py  // Create TSNE visual for results.
-        ├── Network_functions.py  // Contains functions to initialize, train, and test model. 
-        ├── pytorchtools.py // Function for early stopping.
-        ├── Save_Results.py  // Save results from demo script.
+        	├── Generating_Learning_Curves.py  // Plot training and validation accuracy and error measures.
+        	├── Generate_TSNE_visual.py  // Create TSNE visual for results.
+        	├── Network_functions.py  // Contains functions to initialize, train, and test model. 
+        	├── pytorchtools.py // Function for early stopping.
+        	├── Save_Results.py  // Save results from demo script.
 	└── XAI_Methods  // XAI functions
 		├── get_attributes.py // Compute attributions of XAI methods
 		├── get_explanations.py // Calculate XAI metrics, plot 
