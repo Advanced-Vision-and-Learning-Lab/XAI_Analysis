@@ -69,17 +69,18 @@ The parameters can be set in the following script:
 https://github.com/Peeples-Lab/XAI_Analysis
 
 └── root dir
-    ├── demo.py   //Run this. Main demo file.
-    ├── Demo_Parameters.py // Parameters file for demo.
-    ├── Prepare_Data.py  // Load data for demo file.
-	├── Datasets
+	├── demo.py   //Run this. Main demo file.
+	├── Demo_Parameters.py // Parameters file for demo.
+	├── Prepare_Data.py  // Load data for demo file.
+	├── View_Results.py // Run this after demo to view saved results.
+    	├── Datasets
 		├── Get_transform.py // Transforms applied on test, train, val dataset splits
 		├── loader.py // MSTAR dataset loader object
 		├── mstar.py // MSTAR metadata
 		├── preprocess.py // Pytorch Transforms applied to numpy files
 		├── Pytorch_Datasets.py // Return Index for Pytorch datasets
 		├── Pytorch_Datasets_Names.py // Return names of classes in each dataset
-  	└── Utils  //utility functions
+	└── Utils  //utility functions
 		├── Compute_FDR.py  // Compute Fisher Score
 		├── Confusion_mats..py  // Create and plot confusion matrix.
 		├── Focalnet.py // Implementation of Focal Modulation Networks
@@ -90,7 +91,7 @@ https://github.com/Peeples-Lab/XAI_Analysis
     		├── Save_Results.py  // Save results from demo script.
 	└── XAI_Methods  // XAI functions
 		├── get_attributes.py // Compute attributions of XAI methods
-		├── get_explanations.py // Calculate XAI metrics, plot 
+		├── get_explanations.py // Calculate XAI metrics
 		├── get_spyderplot.py // Create and plot spyderplot
 ```
 
