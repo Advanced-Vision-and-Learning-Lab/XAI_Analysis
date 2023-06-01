@@ -12,7 +12,7 @@ Zendo. https://doi.org/10.5281/zenodo.5572704 (TBD)
 
 [[`arXiv, TBD`](https://arxiv.org/abs/2110.05324)]
 
-[`BibTeX`](#CitingQuantitative)
+[[`BibTeX`](https://github.com/Peeples-Lab/XAI_Analysis#citing-quantitative)]
 
 In this repository, we provide the paper and code for the "Quantitative Analysis of Primary Attribution Explainable Artificial Intelligence Methods for Remote Sensing Image Classification."
 
