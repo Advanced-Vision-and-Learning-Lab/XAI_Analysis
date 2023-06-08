@@ -12,7 +12,7 @@ Zendo. https://doi.org/10.5281/zenodo.5572704 (TBD)
 
 [[`IEEE Xplore (IGARRS, TBD)`](https://ieeexplore.ieee.org/document/9706894)]
 
-[[`arXiv, TBD`](https://arxiv.org/abs/2110.05324)]
+[[`arXiv`](https://arxiv.org/abs/2306.04037)]
 
 [[`BibTeX`](https://github.com/Peeples-Lab/XAI_Analysis#citing-quantitative)]
 
