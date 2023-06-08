@@ -10,18 +10,18 @@ Note: If this code is used, cite it: Akshatha Mohan and Joshua Peeples.
 Zendo. https://doi.org/10.5281/zenodo.5572704 (TBD)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5572704.svg)](https://doi.org/10.5281/zenodo.5572704)
 
-[[`IEEE Xplore (IGARRS, TBD)`](https://ieeexplore.ieee.org/document/9706894)]
+[`IEEE Xplore (IGARRS, TBD)`]()
 
-[[`arXiv`](https://arxiv.org/abs/2306.04037)]
+[`arXiv`](https://arxiv.org/abs/2306.04037)
 
-[[`BibTeX`](https://github.com/Peeples-Lab/XAI_Analysis#citing-quantitative)]
+[`BibTeX`](https://github.com/Peeples-Lab/XAI_Analysis#citing-quantitative-analysis-of-primary-attribution-explainable-artificial-intelligence-methods-for-remote-sensing-image-classification)
 
 In this repository, we provide the paper and code for the "Quantitative Analysis of Primary Attribution Explainable Artificial Intelligence Methods for Remote Sensing Image Classification."
 
 ## Installation Prerequisites
 
 This code uses python, pytorch, quantus, and captum. 
-Please use [[`Pytorch's website`](https://pytorch.org/get-started/locally/)] to download necessary packages.
+Please use [`Pytorch's website`](https://pytorch.org/get-started/locally/) to download necessary packages.
 [Quantus](https://quantus.readthedocs.io/en/latest/getting_started/installation.html) 
 and [Captum](https://captum.ai/#quickstart) are used for the XAI model. Please follow the instructions on each website to download the modules.
 
