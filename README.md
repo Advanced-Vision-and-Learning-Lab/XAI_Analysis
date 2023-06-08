@@ -7,8 +7,8 @@ _Akshatha Mohan and Joshua Peeples_
 
 Note: If this code is used, cite it: Akshatha Mohan and Joshua Peeples. 
 (2023, July 19). Peeples-Lab/XAI_Analysis: Initial Release (Version v1.0). 
-[`Zendo (TBD)`]().
-[![DOI]()]()
+[`Zendo`](). https://doi.org/10.5281/zenodo.5572704 (TBD)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5572704.svg)](https://doi.org/10.5281/zenodo.5572704)
 
 [`IEEE Xplore (IGARRS, TBD)`]()
 
