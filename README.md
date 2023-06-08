@@ -109,9 +109,7 @@ reference using the following entry.
 
 **Plain Text:**
 
-A. Mohan and J. Peeples, "Quantitative Analysis of Primary Attribution Explainable Artificial Intelligence Methods for Remote Sensing Image Classification,"  
-In 2023 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 
-pp. TBD. IEEE, 2023
+A. Mohan and J. Peeples, "Quantitative Analysis of Primary Attribution Explainable Artificial Intelligence Methods for Remote Sensing Image Classification,"  in 2023 IEEE International Geoscience and Remote Sensing Symposium IGARSS, pp. TBD. IEEE, 2023
 
 **BibTex:**
 ```
