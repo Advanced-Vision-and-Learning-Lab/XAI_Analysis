@@ -82,7 +82,7 @@ https://github.com/Peeples-Lab/XAI_Analysis
 		├── Pytorch_Datasets_Names.py // Return names of classes in each dataset
 	└── Utils  //utility functions
 		├── Compute_FDR.py  // Compute Fisher Score
-		├── Confusion_mats..py  // Create and plot confusion matrix.
+		├── Confusion_mats.py  // Create and plot confusion matrix.
 		├── Focalnet.py // Implementation of Focal Modulation Networks
     		├── Generating_Learning_Curves.py  // Plot training and validation accuracy and error measures.
     		├── Generate_TSNE_visual.py  // Create TSNE visual for results.
