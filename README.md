@@ -114,7 +114,7 @@ A. Mohan and J. Peeples, "Quantitative Analysis of Primary Attribution Explainab
 **BibTex:**
 ```
 @inproceedings{mohan2023quantitative,
-  title={Explainable Systematic Analysis for Synthetic Aperture Sonar Imagery},
+  title={Quantitative Analysis of Primary Attribution Explainable Artificial Intelligence Methods for Remote Sensing Image Classification},
   author={Mohan, Akshatha and Peeples, Joshua},
   booktitle={2023 IEEE International Geoscience and Remote Sensing Symposium IGARSS},
   pages={950-953},
