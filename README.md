@@ -10,7 +10,7 @@ Note: If this code is used, cite it: Akshatha Mohan and Joshua Peeples.
 [`Zendo`](https://zenodo.org/record/8023959). https://doi.org/10.5281/zenodo.8023959
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8023959.svg)](https://doi.org/10.5281/zenodo.8023959)
 
-[`IEEE Xplore (IGARRS)`](https://cmsfiles.s3.amazonaws.com/ig23/proceedings/papers/0000950.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZW5HH2C3GPEL7I72%2F20230726%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230726T144148Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=0490d0d41325cc0b3326907763d08ffff82ec73f2a2346647c17e7ad8d8dbd81)
+[`IEEE Xplore (IGARRS)`](https://ieeexplore.ieee.org/document/10281981)
 
 [`arXiv`](https://arxiv.org/abs/2306.04037)
 
